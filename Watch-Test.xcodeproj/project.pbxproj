@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,34 @@
 		513D9C9E22C4AB5F001EE986 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D9C9D22C4AB5F001EE986 /* ExtensionDelegate.swift */; };
 		513D9CA022C4AB5F001EE986 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D9C9F22C4AB5F001EE986 /* NotificationController.swift */; };
 		513D9CA222C4AB60001EE986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513D9CA122C4AB60001EE986 /* Assets.xcassets */; };
+		51D1341522DF0789000E21E2 /* ScoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341322DF0784000E21E2 /* ScoringController.swift */; };
+		51D1341722DF0862000E21E2 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341622DF0862000E21E2 /* RowController.swift */; };
+		51D1341B22DF1C91000E21E2 /* MotionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341A22DF1C91000E21E2 /* MotionRecord.swift */; };
+		51D1342122DF213D000E21E2 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341F22DF213D000E21E2 /* EditProfileViewController.swift */; };
+		51D1342222DF213D000E21E2 /* EditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1342022DF213D000E21E2 /* EditNameViewController.swift */; };
+		51D1342522DF2233000E21E2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D1342322DF2233000E21E2 /* Profile.storyboard */; };
+		51D1342922DF2258000E21E2 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D1342722DF2258000E21E2 /* Play.storyboard */; };
+		51D1342B22DF226C000E21E2 /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D1342A22DF226C000E21E2 /* Statistic.storyboard */; };
+		51D1342D22DF2471000E21E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1342C22DF2471000E21E2 /* Extensions.swift */; };
+		51D1343122DF25C8000E21E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1342F22DF25C8000E21E2 /* User.swift */; };
+		51D1343222DF25C8000E21E2 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343022DF25C8000E21E2 /* Key.swift */; };
+		51D1343422DF3868000E21E2 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343322DF3868000E21E2 /* StartController.swift */; };
+		51D1343622E05AA1000E21E2 /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343522E05AA1000E21E2 /* FeedbackController.swift */; };
+		51D1343E22E06186000E21E2 /* StatisticChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343822E06186000E21E2 /* StatisticChartView.swift */; };
+		51D1343F22E06186000E21E2 /* PopupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343922E06186000E21E2 /* PopupCollectionViewCell.swift */; };
+		51D1344022E06186000E21E2 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343A22E06186000E21E2 /* StatisticModel.swift */; };
+		51D1344122E06186000E21E2 /* BowlingStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343B22E06186000E21E2 /* BowlingStatistic.swift */; };
+		51D1344222E06186000E21E2 /* StatisticButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343C22E06186000E21E2 /* StatisticButton.swift */; };
+		51D1344322E06186000E21E2 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1343D22E06186000E21E2 /* Statistic.swift */; };
+		51D1344622E061E4000E21E2 /* StatisticController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1344522E061E4000E21E2 /* StatisticController.swift */; };
+		51D1344822E065A8000E21E2 /* AnimUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1344722E065A8000E21E2 /* AnimUtils.swift */; };
+		51D1344B22E067AF000E21E2 /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1344A22E067AF000E21E2 /* PlayController.swift */; };
+		51D1344F22E08AB9000E21E2 /* GifFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1344D22E08AB9000E21E2 /* GifFile.swift */; };
+		51D1345022E08AB9000E21E2 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51D1344E22E08AB9000E21E2 /* loading.gif */; };
+		51D9153422D8753000ED8E2F /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9153322D8753000ED8E2F /* WorkoutManager.swift */; };
+		51D9153622D8755200ED8E2F /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9153522D8755200ED8E2F /* MotionManager.swift */; };
+		51D9153822D8756500ED8E2F /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9153722D8756500ED8E2F /* RunningBuffer.swift */; };
+		F5BE17D5C0214B8218BF6BAF /* Pods_Watch_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DAC90C935324DCDFB75990 /* Pods_Watch_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,13 +111,54 @@
 		513D9CA122C4AB60001EE986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513D9CA322C4AB60001EE986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513D9CA422C4AB60001EE986 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		51D1340E22DDC193000E21E2 /* MotionTrackingExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionTrackingExtension.entitlements; sourceTree = "<group>"; };
+		51D1340F22DDC1C1000E21E2 /* MotionTracking WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MotionTracking WatchKit App.entitlements"; sourceTree = "<group>"; };
+		51D1341022DDC1D7000E21E2 /* MotionTrackingWatchKitExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionTrackingWatchKitExtension.entitlements; sourceTree = "<group>"; };
+		51D1341322DF0784000E21E2 /* ScoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringController.swift; sourceTree = "<group>"; };
+		51D1341622DF0862000E21E2 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		51D1341A22DF1C91000E21E2 /* MotionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionRecord.swift; sourceTree = "<group>"; };
+		51D1341F22DF213D000E21E2 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		51D1342022DF213D000E21E2 /* EditNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNameViewController.swift; sourceTree = "<group>"; };
+		51D1342422DF2233000E21E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Watch-Test/Base.lproj/Profile.storyboard"; sourceTree = "<group>"; };
+		51D1342822DF2258000E21E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Watch-Test/Storyboard/Base.lproj/Play.storyboard"; sourceTree = "<group>"; };
+		51D1342A22DF226C000E21E2 /* Statistic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistic.storyboard; sourceTree = "<group>"; };
+		51D1342C22DF2471000E21E2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		51D1342F22DF25C8000E21E2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		51D1343022DF25C8000E21E2 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		51D1343322DF3868000E21E2 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		51D1343522E05AA1000E21E2 /* FeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackController.swift; sourceTree = "<group>"; };
+		51D1343822E06186000E21E2 /* StatisticChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticChartView.swift; sourceTree = "<group>"; };
+		51D1343922E06186000E21E2 /* PopupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupCollectionViewCell.swift; sourceTree = "<group>"; };
+		51D1343A22E06186000E21E2 /* StatisticModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		51D1343B22E06186000E21E2 /* BowlingStatistic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowlingStatistic.swift; sourceTree = "<group>"; };
+		51D1343C22E06186000E21E2 /* StatisticButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticButton.swift; sourceTree = "<group>"; };
+		51D1343D22E06186000E21E2 /* Statistic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		51D1344522E061E4000E21E2 /* StatisticController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticController.swift; sourceTree = "<group>"; };
+		51D1344722E065A8000E21E2 /* AnimUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimUtils.swift; sourceTree = "<group>"; };
+		51D1344A22E067AF000E21E2 /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
+		51D1344D22E08AB9000E21E2 /* GifFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifFile.swift; sourceTree = "<group>"; };
+		51D1344E22E08AB9000E21E2 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		51D9153322D8753000ED8E2F /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		51D9153522D8755200ED8E2F /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		51D9153722D8756500ED8E2F /* RunningBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+		58DAC90C935324DCDFB75990 /* Pods_Watch_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E1A16FA4A71801233D1C56 /* Pods-Watch-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch-Test.debug.xcconfig"; path = "Target Support Files/Pods-Watch-Test/Pods-Watch-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0D1880E5C33E7C0AA29357 /* Pods-Watch-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch-Test.release.xcconfig"; path = "Target Support Files/Pods-Watch-Test/Pods-Watch-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3CA80C36441F73A907252DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		513D9C7222C4AB5E001EE986 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BE17D5C0214B8218BF6BAF /* Pods_Watch_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +172,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		229E5B2C162F776E1203413F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58DAC90C935324DCDFB75990 /* Pods_Watch_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		513D9C6C22C4AB5D001EE986 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +187,8 @@
 				513D9C8B22C4AB5F001EE986 /* Watch-Test WatchKit App */,
 				513D9C9A22C4AB5F001EE986 /* Watch-Test WatchKit Extension */,
 				513D9C7622C4AB5E001EE986 /* Products */,
+				E7B32823D37CBE656D584227 /* Pods */,
+				229E5B2C162F776E1203413F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,11 +206,18 @@
 			isa = PBXGroup;
 			children = (
 				513D9C7822C4AB5E001EE986 /* AppDelegate.swift */,
-				513D9C7A22C4AB5E001EE986 /* ViewController.swift */,
-				513D9C7C22C4AB5E001EE986 /* Main.storyboard */,
+				51D1342622DF223A000E21E2 /* Storyboard */,
+				51D1341E22DF2123000E21E2 /* Profile */,
+				51D1344422E061C0000E21E2 /* Statistic */,
+				51D1344922E06794000E21E2 /* Play */,
+				51D1342E22DF2592000E21E2 /* Model (Profile) */,
+				51D1343722E0614C000E21E2 /* Model (Statistic) */,
+				51D1344C22E08A91000E21E2 /* GIF */,
 				513D9C7F22C4AB5F001EE986 /* Assets.xcassets */,
-				513D9C8122C4AB5F001EE986 /* LaunchScreen.storyboard */,
 				513D9C8422C4AB5F001EE986 /* Info.plist */,
+				51D1340E22DDC193000E21E2 /* MotionTrackingExtension.entitlements */,
+				51D1344722E065A8000E21E2 /* AnimUtils.swift */,
+				51D1342C22DF2471000E21E2 /* Extensions.swift */,
 			);
 			path = "Watch-Test";
 			sourceTree = "<group>";
@@ -142,6 +228,7 @@
 				513D9C8C22C4AB5F001EE986 /* Interface.storyboard */,
 				513D9C8F22C4AB5F001EE986 /* Assets.xcassets */,
 				513D9C9122C4AB5F001EE986 /* Info.plist */,
+				51D1340F22DDC1C1000E21E2 /* MotionTracking WatchKit App.entitlements */,
 			);
 			path = "Watch-Test WatchKit App";
 			sourceTree = "<group>";
@@ -149,14 +236,117 @@
 		513D9C9A22C4AB5F001EE986 /* Watch-Test WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				513D9C9B22C4AB5F001EE986 /* InterfaceController.swift */,
-				513D9C9D22C4AB5F001EE986 /* ExtensionDelegate.swift */,
+				51D1343322DF3868000E21E2 /* StartController.swift */,
+				51D1343522E05AA1000E21E2 /* FeedbackController.swift */,
+				51D1341822DF0869000E21E2 /* Table Score */,
+				51D1341922DF087D000E21E2 /* Motion Dectector */,
 				513D9C9F22C4AB5F001EE986 /* NotificationController.swift */,
+				513D9C9D22C4AB5F001EE986 /* ExtensionDelegate.swift */,
 				513D9CA122C4AB60001EE986 /* Assets.xcassets */,
 				513D9CA322C4AB60001EE986 /* Info.plist */,
 				513D9CA422C4AB60001EE986 /* PushNotificationPayload.apns */,
+				51D1341022DDC1D7000E21E2 /* MotionTrackingWatchKitExtension.entitlements */,
 			);
 			path = "Watch-Test WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		51D1341822DF0869000E21E2 /* Table Score */ = {
+			isa = PBXGroup;
+			children = (
+				51D1341322DF0784000E21E2 /* ScoringController.swift */,
+				51D1341622DF0862000E21E2 /* RowController.swift */,
+			);
+			path = "Table Score";
+			sourceTree = "<group>";
+		};
+		51D1341922DF087D000E21E2 /* Motion Dectector */ = {
+			isa = PBXGroup;
+			children = (
+				513D9C9B22C4AB5F001EE986 /* InterfaceController.swift */,
+				51D1341A22DF1C91000E21E2 /* MotionRecord.swift */,
+				51D9153322D8753000ED8E2F /* WorkoutManager.swift */,
+				51D9153522D8755200ED8E2F /* MotionManager.swift */,
+				51D9153722D8756500ED8E2F /* RunningBuffer.swift */,
+			);
+			path = "Motion Dectector";
+			sourceTree = "<group>";
+		};
+		51D1341E22DF2123000E21E2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				513D9C7A22C4AB5E001EE986 /* ViewController.swift */,
+				51D1342022DF213D000E21E2 /* EditNameViewController.swift */,
+				51D1341F22DF213D000E21E2 /* EditProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		51D1342622DF223A000E21E2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				513D9C7C22C4AB5E001EE986 /* Main.storyboard */,
+				51D1342322DF2233000E21E2 /* Profile.storyboard */,
+				51D1342722DF2258000E21E2 /* Play.storyboard */,
+				51D1342A22DF226C000E21E2 /* Statistic.storyboard */,
+				513D9C8122C4AB5F001EE986 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		51D1342E22DF2592000E21E2 /* Model (Profile) */ = {
+			isa = PBXGroup;
+			children = (
+				51D1343022DF25C8000E21E2 /* Key.swift */,
+				51D1342F22DF25C8000E21E2 /* User.swift */,
+			);
+			path = "Model (Profile)";
+			sourceTree = "<group>";
+		};
+		51D1343722E0614C000E21E2 /* Model (Statistic) */ = {
+			isa = PBXGroup;
+			children = (
+				51D1343B22E06186000E21E2 /* BowlingStatistic.swift */,
+				51D1343922E06186000E21E2 /* PopupCollectionViewCell.swift */,
+				51D1343D22E06186000E21E2 /* Statistic.swift */,
+				51D1343C22E06186000E21E2 /* StatisticButton.swift */,
+				51D1343822E06186000E21E2 /* StatisticChartView.swift */,
+				51D1343A22E06186000E21E2 /* StatisticModel.swift */,
+			);
+			path = "Model (Statistic)";
+			sourceTree = "<group>";
+		};
+		51D1344422E061C0000E21E2 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				51D1344522E061E4000E21E2 /* StatisticController.swift */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		51D1344922E06794000E21E2 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				51D1344A22E067AF000E21E2 /* PlayController.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		51D1344C22E08A91000E21E2 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				51D1344D22E08AB9000E21E2 /* GifFile.swift */,
+				51D1344E22E08AB9000E21E2 /* loading.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		E7B32823D37CBE656D584227 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91E1A16FA4A71801233D1C56 /* Pods-Watch-Test.debug.xcconfig */,
+				DA0D1880E5C33E7C0AA29357 /* Pods-Watch-Test.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,10 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 513D9CAF22C4AB60001EE986 /* Build configuration list for PBXNativeTarget "Watch-Test" */;
 			buildPhases = (
+				5D73CE0485E76C2838C6079E /* [CP] Check Pods Manifest.lock */,
 				513D9C7122C4AB5E001EE986 /* Sources */,
 				513D9C7222C4AB5E001EE986 /* Frameworks */,
 				513D9C7322C4AB5E001EE986 /* Resources */,
 				513D9CAE22C4AB60001EE986 /* Embed Watch Content */,
+				5AE78C5C87792FAE54F4DBCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +379,7 @@
 			buildPhases = (
 				513D9C8522C4AB5F001EE986 /* Resources */,
 				513D9CAA22C4AB60001EE986 /* Embed App Extensions */,
+				3CA80C36441F73A907252DCC /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +426,11 @@
 					};
 					513D9C9522C4AB5F001EE986 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,7 +461,11 @@
 			files = (
 				513D9C8322C4AB5F001EE986 /* LaunchScreen.storyboard in Resources */,
 				513D9C8022C4AB5F001EE986 /* Assets.xcassets in Resources */,
+				51D1342522DF2233000E21E2 /* Profile.storyboard in Resources */,
+				51D1342922DF2258000E21E2 /* Play.storyboard in Resources */,
+				51D1345022E08AB9000E21E2 /* loading.gif in Resources */,
 				513D9C7E22C4AB5E001EE986 /* Main.storyboard in Resources */,
+				51D1342B22DF226C000E21E2 /* Statistic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +488,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5AE78C5C87792FAE54F4DBCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watch-Test/Pods-Watch-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watch-Test/Pods-Watch-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watch-Test/Pods-Watch-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D73CE0485E76C2838C6079E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		513D9C7122C4AB5E001EE986 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D1344022E06186000E21E2 /* StatisticModel.swift in Sources */,
+				51D1344F22E08AB9000E21E2 /* GifFile.swift in Sources */,
+				51D1343E22E06186000E21E2 /* StatisticChartView.swift in Sources */,
+				51D1343222DF25C8000E21E2 /* Key.swift in Sources */,
+				51D1342D22DF2471000E21E2 /* Extensions.swift in Sources */,
+				51D1344222E06186000E21E2 /* StatisticButton.swift in Sources */,
+				51D1343F22E06186000E21E2 /* PopupCollectionViewCell.swift in Sources */,
 				513D9C7B22C4AB5E001EE986 /* ViewController.swift in Sources */,
+				51D1344122E06186000E21E2 /* BowlingStatistic.swift in Sources */,
+				51D1343122DF25C8000E21E2 /* User.swift in Sources */,
+				51D1344B22E067AF000E21E2 /* PlayController.swift in Sources */,
+				51D1344822E065A8000E21E2 /* AnimUtils.swift in Sources */,
+				51D1342222DF213D000E21E2 /* EditNameViewController.swift in Sources */,
 				513D9C7922C4AB5E001EE986 /* AppDelegate.swift in Sources */,
+				51D1342122DF213D000E21E2 /* EditProfileViewController.swift in Sources */,
+				51D1344622E061E4000E21E2 /* StatisticController.swift in Sources */,
+				51D1344322E06186000E21E2 /* Statistic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +560,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				513D9CA022C4AB5F001EE986 /* NotificationController.swift in Sources */,
+				51D1341B22DF1C91000E21E2 /* MotionRecord.swift in Sources */,
+				51D1343622E05AA1000E21E2 /* FeedbackController.swift in Sources */,
+				51D1343422DF3868000E21E2 /* StartController.swift in Sources */,
+				51D1341522DF0789000E21E2 /* ScoringController.swift in Sources */,
+				51D1341722DF0862000E21E2 /* RowController.swift in Sources */,
+				51D9153622D8755200ED8E2F /* MotionManager.swift in Sources */,
+				51D9153422D8753000ED8E2F /* WorkoutManager.swift in Sources */,
 				513D9C9E22C4AB5F001EE986 /* ExtensionDelegate.swift in Sources */,
 				513D9C9C22C4AB5F001EE986 /* InterfaceController.swift in Sources */,
+				51D9153822D8756500ED8E2F /* RunningBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +611,22 @@
 				513D9C8D22C4AB5F001EE986 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		51D1342322DF2233000E21E2 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51D1342422DF2233000E21E2 /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		51D1342722DF2258000E21E2 /* Play.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51D1342822DF2258000E21E2 /* Base */,
+			);
+			name = Play.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -549,6 +832,7 @@
 		};
 		513D9CB022C4AB60001EE986 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91E1A16FA4A71801233D1C56 /* Pods-Watch-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +851,7 @@
 		};
 		513D9CB122C4AB60001EE986 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0D1880E5C33E7C0AA29357 /* Pods-Watch-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

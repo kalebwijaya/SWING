@@ -1,16 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KMx-CL-J7y">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_Test_WatchKit_Extension">
+                    <items>
+                        <label height="16" alignment="left" text="Not Tracking" textAlignment="center" id="Gyb-lM-g7F" userLabel="TitleLabel">
+                            <color key="textColor" red="1" green="0.0" blue="0.029831843470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="136" alignment="left" text="Gravity" id="AIc-b2-aZd" userLabel="Gravity Label"/>
+                        <label alignment="left" text="0" id="n93-Ac-8QS" userLabel="GravityValue">
+                            <color key="textColor" red="0.085898444059999995" green="0.95968544479999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label alignment="left" text="Rotation" id="our-Qb-sSu" userLabel="RotationLabel"/>
+                        <label alignment="left" text="0" id="5dG-Kw-2nm" userLabel="RotationValue">
+                            <color key="textColor" red="0.085898444059999995" green="0.95968544479999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label alignment="left" text="Attitude" id="btY-4k-nEy" userLabel="AttitudeLabel"/>
+                        <label alignment="left" text="0" id="tdF-Hi-s4h" userLabel="AttitudeValue">
+                            <color key="textColor" red="0.085898444059999995" green="0.95968544479999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label alignment="left" text="User Acceleration" id="xwf-uf-MXu" userLabel="UALabel"/>
+                        <label alignment="left" text="0" id="WJG-FR-8mr" userLabel="UAValue">
+                            <color key="textColor" red="0.085898444059999995" green="0.95968544479999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <group width="1" alignment="left" id="edR-PK-zFc">
+                            <items>
+                                <button width="66" alignment="center" title="Start" id="KrE-B2-ocK">
+                                    <connections>
+                                        <action selector="start" destination="AgC-eL-Hgc" id="h9t-NR-AJE"/>
+                                    </connections>
+                                </button>
+                                <button width="65" alignment="center" title="Stop" id="Nsg-ih-Ke7">
+                                    <connections>
+                                        <action selector="stop" destination="AgC-eL-Hgc" id="2V4-nJ-pX1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="attitudeLabel" destination="tdF-Hi-s4h" id="9vl-e6-xXh"/>
+                        <outlet property="gravityLabel" destination="n93-Ac-8QS" id="6Jk-H5-rHn"/>
+                        <outlet property="rotationLabel" destination="5dG-Kw-2nm" id="v1s-d7-YP8"/>
+                        <outlet property="titleLabel" destination="Gyb-lM-g7F" id="bN3-b3-Oh4"/>
+                        <outlet property="userAccel" destination="WJG-FR-8mr" id="yIl-OK-FMm"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="237.5"/>
+        </scene>
+        <!--Start Controller-->
+        <scene sceneID="DUg-ME-Rc2">
+            <objects>
+                <controller id="KMx-CL-J7y" customClass="StartController" customModule="Watch_Test_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start" id="hz9-2J-u13">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                            <connections>
+                                <action selector="StartBowling" destination="KMx-CL-J7y" id="Nb6-yA-3sc"/>
+                            </connections>
+                        </button>
+                        <imageView height="106" alignment="left" image="appIcon" contentMode="scaleAspectFit" id="hHU-oo-TxP"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="554" y="219"/>
+        </scene>
+        <!--MotionDetector-->
+        <scene sceneID="F0f-H1-AgK">
+            <objects>
+                <controller identifier="MotionDetector" id="K0s-oL-tfD" customClass="MotionRecord" customModule="Watch_Test_WatchKit_Extension">
+                    <items>
+                        <label height="125" alignment="center" verticalAlignment="center" text="Make Sure Your Hand Alignment Is Right" textAlignment="center" numberOfLines="4" id="0de-yI-7rM">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="836" y="219"/>
+        </scene>
+        <!--FeedbackController-->
+        <scene sceneID="M5V-tI-mbY">
+            <objects>
+                <controller identifier="FeedbackController" id="QEP-8K-Buh" customClass="FeedbackController" customModule="Watch_Test_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Tilt Your Hand a Little To The Right" textAlignment="center" numberOfLines="3" id="Bcc-nR-ILc">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1095" y="219"/>
+        </scene>
+        <!--ScoringController-->
+        <scene sceneID="kdo-Rt-Rr8">
+            <objects>
+                <controller identifier="ScoringController" id="wC7-Oy-BjS" customClass="ScoringController" customModule="Watch_Test_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="AMC-Jq-PpD">
+                            <items>
+                                <tableRow identifier="RowController" id="wiV-TF-XQx" customClass="RowController" customModule="Watch_Test_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="1EI-7L-vv6">
+                                        <items>
+                                            <label width="90" height="31" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="4Ga-ZA-eLg">
+                                                <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="scoreLabel" destination="4Ga-ZA-eLg" id="k4t-K2-K6P"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="scoreTable" destination="AMC-Jq-PpD" id="DKU-wD-ouZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="836" y="535"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,16 +153,16 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Watch_Test_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="429" y="991"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Watch_Test_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="220" y="991"/>
         </scene>
     </scenes>
 </document>
