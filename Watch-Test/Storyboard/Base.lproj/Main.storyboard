@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WM9-QB-oF6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DXU-ej-9ie">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="iH4-Te-sqw">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="DXU-ej-9ie" customClass="PageViewController" customModule="Watch_Test" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cY-cz-vx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549" y="-1487"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bIS-Ya-3HD">
+            <objects>
+                <viewController storyboardIdentifier="PageOne" id="rNH-Kf-hoa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yHq-8Y-sDe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="wR6-0v-JqY">
+                                <rect key="frame" x="187.5" y="779.5" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.74840408563613892" green="0.22088932991027832" blue="0.68630689382553101" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="0.74882610100000002" green="0.22117691496170544" blue="0.6849248619041246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1070477888" green="0.1078607216" blue="0.18824437259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wR6-0v-JqY" firstAttribute="centerY" secondItem="yHq-8Y-sDe" secondAttribute="centerY" constant="350" id="0uX-Q4-lit"/>
+                            <constraint firstItem="wR6-0v-JqY" firstAttribute="centerX" secondItem="yHq-8Y-sDe" secondAttribute="centerX" id="LoP-vE-eWU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wDp-WU-VQa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSs-K3-9g0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223.18840579710147" y="-765.40178571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8kM-xG-R5U">
+            <objects>
+                <viewController storyboardIdentifier="PageTwo" id="mZ8-jb-G9m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rkl-Pw-0vH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="kjT-vq-as9">
+                                <rect key="frame" x="187.5" y="779.5" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.74840408560000005" green="0.22088932989999999" blue="0.68630689379999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="0.74840408563613892" green="0.22088932991027832" blue="0.68630689382553101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1070477888" green="0.1078607216" blue="0.18824437259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kjT-vq-as9" firstAttribute="centerX" secondItem="Rkl-Pw-0vH" secondAttribute="centerX" id="KDV-en-bAa"/>
+                            <constraint firstItem="kjT-vq-as9" firstAttribute="centerY" secondItem="Rkl-Pw-0vH" secondAttribute="centerY" constant="350" id="Shq-OP-iAI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="40g-wh-ief"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d2-T9-6nz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-765"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uJ7-ji-mMM">
+            <objects>
+                <viewController storyboardIdentifier="PageThree" id="aJ6-2u-aSc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qr-PD-F1r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="AAa-gz-TWU">
+                                <rect key="frame" x="187.5" y="780" width="39" height="36"/>
+                                <color key="pageIndicatorTintColor" red="0.74840408560000005" green="0.22088932989999999" blue="0.68630689379999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="0.74840408563613892" green="0.22088932991027832" blue="0.68630689382553101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EJ-0R-dP5">
+                                <rect key="frame" x="93" y="674" width="229" height="53"/>
+                                <color key="backgroundColor" red="0.2285346389" green="0.2255275249" blue="0.31373617050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="G3S-td-Kw1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="WM9-QB-oF6" kind="show" id="1Nc-Qf-9X9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10704778879880905" green="0.10786072164773941" blue="0.18824437260627747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AAa-gz-TWU" firstAttribute="centerY" secondItem="8qr-PD-F1r" secondAttribute="centerY" constant="350" id="ARV-wn-afR"/>
+                            <constraint firstItem="2EJ-0R-dP5" firstAttribute="centerX" secondItem="AAa-gz-TWU" secondAttribute="centerX" id="AYw-oa-2XV"/>
+                            <constraint firstItem="AAa-gz-TWU" firstAttribute="top" secondItem="2EJ-0R-dP5" secondAttribute="bottom" constant="53" id="KgB-DY-8BD"/>
+                            <constraint firstItem="2EJ-0R-dP5" firstAttribute="leading" secondItem="yF2-sF-upY" secondAttribute="leading" constant="93" id="V9K-kB-XQ2"/>
+                            <constraint firstItem="2EJ-0R-dP5" firstAttribute="top" secondItem="yF2-sF-upY" secondAttribute="top" constant="630" id="af0-xM-a3Z"/>
+                            <constraint firstItem="AAa-gz-TWU" firstAttribute="centerX" secondItem="8qr-PD-F1r" secondAttribute="centerX" id="gZu-st-nVY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yF2-sF-upY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4J5-ih-4Ym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313.0434782608697" y="-765.40178571428567"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5Fb-sE-bRU">
             <objects>

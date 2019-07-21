@@ -20,6 +20,7 @@
 		513D9C9E22C4AB5F001EE986 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D9C9D22C4AB5F001EE986 /* ExtensionDelegate.swift */; };
 		513D9CA022C4AB5F001EE986 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D9C9F22C4AB5F001EE986 /* NotificationController.swift */; };
 		513D9CA222C4AB60001EE986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513D9CA122C4AB60001EE986 /* Assets.xcassets */; };
+		51AC50E122E4D09B00F5E19F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC50E022E4D09B00F5E19F /* PageViewController.swift */; };
 		51D1341522DF0789000E21E2 /* ScoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341322DF0784000E21E2 /* ScoringController.swift */; };
 		51D1341722DF0862000E21E2 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341622DF0862000E21E2 /* RowController.swift */; };
 		51D1341B22DF1C91000E21E2 /* MotionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1341A22DF1C91000E21E2 /* MotionRecord.swift */; };
@@ -111,6 +112,7 @@
 		513D9CA122C4AB60001EE986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513D9CA322C4AB60001EE986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513D9CA422C4AB60001EE986 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		51AC50E022E4D09B00F5E19F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		51D1340E22DDC193000E21E2 /* MotionTrackingExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionTrackingExtension.entitlements; sourceTree = "<group>"; };
 		51D1340F22DDC1C1000E21E2 /* MotionTracking WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MotionTracking WatchKit App.entitlements"; sourceTree = "<group>"; };
 		51D1341022DDC1D7000E21E2 /* MotionTrackingWatchKitExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionTrackingWatchKitExtension.entitlements; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				513D9C7822C4AB5E001EE986 /* AppDelegate.swift */,
 				51D1342622DF223A000E21E2 /* Storyboard */,
+				51AC50DF22E4D05C00F5E19F /* Walkthrough */,
 				51D1341E22DF2123000E21E2 /* Profile */,
 				51D1344422E061C0000E21E2 /* Statistic */,
 				51D1344922E06794000E21E2 /* Play */,
@@ -248,6 +251,14 @@
 				51D1341022DDC1D7000E21E2 /* MotionTrackingWatchKitExtension.entitlements */,
 			);
 			path = "Watch-Test WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		51AC50DF22E4D05C00F5E19F /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				51AC50E022E4D09B00F5E19F /* PageViewController.swift */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 		51D1341822DF0869000E21E2 /* Table Score */ = {
@@ -550,6 +561,7 @@
 				51D1342222DF213D000E21E2 /* EditNameViewController.swift in Sources */,
 				513D9C7922C4AB5E001EE986 /* AppDelegate.swift in Sources */,
 				51D1342122DF213D000E21E2 /* EditProfileViewController.swift in Sources */,
+				51AC50E122E4D09B00F5E19F /* PageViewController.swift in Sources */,
 				51D1344622E061E4000E21E2 /* StatisticController.swift in Sources */,
 				51D1344322E06186000E21E2 /* Statistic.swift in Sources */,
 			);

@@ -19,7 +19,6 @@ class FeedbackController:WKInterfaceController, WCSessionDelegate{
     let tips = "Tilt Your Hand a Little To The Right"
     
     override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
         wcSession = WCSession.default
         wcSession.delegate = self
         wcSession.activate()
@@ -34,6 +33,7 @@ class FeedbackController:WKInterfaceController, WCSessionDelegate{
                 )
             }
         })
+        super.awake(withContext: context)
     }
     
     override func didDeactivate() {

@@ -17,8 +17,6 @@ class StatisticController: UIViewController {
     let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
    
     
-//        var tableDataTitle = ["Total Game","Total Strike", "Right Handling", "Wrong Handling"]
-    
     @IBOutlet weak var button1Tapped: StatisticButton!
     @IBOutlet weak var button2Tapped: StatisticButton!
     @IBOutlet weak var button3Tapped: StatisticButton!
@@ -40,19 +38,14 @@ class StatisticController: UIViewController {
     
     @IBOutlet weak var popupButtonOutlet: StatisticButton!
     
-//    @IBOutlet weak var detailTableView: UITableView!
-    
     @IBOutlet var popupView: UIView!
     @IBOutlet weak var popupCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        detailTableView.delegate    = self
-//        detailTableView.dataSource  = self
         
         view.backgroundColor = #colorLiteral(red: 0.1058823529, green: 0.1058823529, blue: 0.2039215686, alpha: 1)
-        
-//        displayData(statisticModel.getData(Index: 0))
+
         loadViewFunc()
         
         button1Tapped.backgroundColor = .white
@@ -89,8 +82,6 @@ class StatisticController: UIViewController {
         
         popupView.backgroundColor = #colorLiteral(red: 0.1254901961, green: 0.1254901961, blue: 0.2392156863, alpha: 1)
         
-//        detailTableView.backgroundColor = #colorLiteral(red: 0.1058823529, green: 0.1058823529, blue: 0.2039215686, alpha: 1)
-        
         popupCollectionView.backgroundColor = #colorLiteral(red: 0.1254901961, green: 0.1254901961, blue: 0.2392156863, alpha: 1)
         
         print(popupView.frame)
@@ -112,8 +103,6 @@ class StatisticController: UIViewController {
         button4Tapped.tintColor         = .white
         button5Tapped.tintColor         = .white
         buttonAllTapped.tintColor       = .white
-//        displayData(statisticModel.getData(Index: 0))
-//        detailTableView.reloadData()
         rightHandlingCount.text = statisticModel.valueNumberData[0][2]
         wrongHandlingCount.text = statisticModel.valueNumberData[0][3]
     }
@@ -134,8 +123,6 @@ class StatisticController: UIViewController {
         button4Tapped.tintColor         = .white
         button5Tapped.tintColor         = .white
         buttonAllTapped.tintColor       = .white
-//        displayData(statisticModel.getData(Index: 1))
-//        detailTableView.reloadData()
         rightHandlingCount.text = statisticModel.valueNumberData[1][2]
         wrongHandlingCount.text = statisticModel.valueNumberData[1][3]
     }
@@ -156,8 +143,6 @@ class StatisticController: UIViewController {
         button4Tapped.tintColor         = .white
         button5Tapped.tintColor         = .white
         buttonAllTapped.tintColor       = .white
-//        displayData(statisticModel.getData(Index: 2))
-//        detailTableView.reloadData()
         rightHandlingCount.text = statisticModel.valueNumberData[2][2]
         wrongHandlingCount.text = statisticModel.valueNumberData[2][3]
     }
@@ -178,8 +163,6 @@ class StatisticController: UIViewController {
         button4Tapped.tintColor         = .black
         button5Tapped.tintColor         = .white
         buttonAllTapped.tintColor       = .white
-//        displayData(statisticModel.getData(Index: 3))
-//        detailTableView.reloadData()
         rightHandlingCount.text = statisticModel.valueNumberData[3][2]
         wrongHandlingCount.text = statisticModel.valueNumberData[3][3]
         
@@ -201,8 +184,6 @@ class StatisticController: UIViewController {
         button4Tapped.tintColor         = .white
         button5Tapped.tintColor         = .black
         buttonAllTapped.tintColor       = .white
-//        displayData(statisticModel.getData(Index: 4))
-//        detailTableView.reloadData()
         rightHandlingCount.text = statisticModel.valueNumberData[4][2]
         wrongHandlingCount.text = statisticModel.valueNumberData[4][3]
     }
@@ -223,8 +204,6 @@ class StatisticController: UIViewController {
         button4Tapped.tintColor         = .white
         button5Tapped.tintColor         = .white
         buttonAllTapped.tintColor       = .black
-//        displayData(statisticModel.getData(Index: 5))
-//        detailTableView.reloadData()
         rightHandlingCount.text = String(Int(statisticModel.valueNumberData[0][2])! + Int(statisticModel.valueNumberData[1][2])! + Int(statisticModel.valueNumberData[2][2])! + Int(statisticModel.valueNumberData[3][2])! + Int(statisticModel.valueNumberData[4][2])!)
         
         wrongHandlingCount.text = String(Int(statisticModel.valueNumberData[0][3])! + Int(statisticModel.valueNumberData[1][3])! + Int(statisticModel.valueNumberData[2][3])! + Int(statisticModel.valueNumberData[3][3])! + Int(statisticModel.valueNumberData[4][3])!)
@@ -232,7 +211,8 @@ class StatisticController: UIViewController {
         
     }
     
-    @IBAction func popupButton(_ sender: Any) {
+    @IBAction func popupButton(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5, animations: {self.moveUp(view: self.popupView)})
         let blurEffectView = UIVisualEffectView(effect: self.blurEffect)
         blurEffectView.frame = self.view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -241,15 +221,17 @@ class StatisticController: UIViewController {
         self.popupView.center = self.view.center
         
         self.view.addSubview(blurEffectView)
-        UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: .curveLinear, animations: {
             self.view.addSubview(self.popupView)
-        })
     }
     
     @IBAction func donePopoverButton(_ sender: Any) {
         self.popupView.removeFromSuperview()
         let blurView = self.view.subviews[self.view.subviews.count - 1]
         blurView.removeFromSuperview()
+    }
+    
+    func moveUp(view:UIView) {
+        view.center.y -= 700
     }
     
     private func loadViewFunc() {
@@ -260,24 +242,7 @@ class StatisticController: UIViewController {
 
 }
 
-//extension ViewController: UITableViewDataSource, UITableViewDelegate{
-//
-//    func displayData(_ dataStatistic: [Statistic]){
-//        self.dataStatistic = dataStatistic
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return dataStatistic.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = detailTableView.dequeueReusableCell(withIdentifier: "cellStatistic") as! StatisticTableViewCell
-//        cell.displayData(dataStatistic[indexPath.row])
-//        return cell
-//    }
-//
-//
-//}
+
 
 extension StatisticController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

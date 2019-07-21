@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xky-wl-YCY">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xky-wl-YCY">
                                 <rect key="frame" x="57" y="348" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="IzU-vJ-LUY"/>
@@ -28,15 +28,56 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-ox-Nbe">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-ox-Nbe">
                                 <rect key="frame" x="0.0" y="304" width="414" height="288"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oca-MK-6eQ">
+                                <rect key="frame" x="0.0" y="186" width="414" height="524"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RB-yP-ZtM">
+                                        <rect key="frame" x="20" y="181" width="374" height="253"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="253" id="gmb-mZ-Tu7"/>
+                                        </constraints>
+                                        <string key="text">1.  Keep your bowling hand directly underneath the ball and your wrist straight.
+
+2. Swing your bowling arm out and back.
+
+3. As the ball comes forward, release it onto the lane when it reaches your ankle, keeping your hand straight and palm up the entire time</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP7-AH-Ncm">
+                                        <rect key="frame" x="20" y="143" width="50" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4RB-yP-ZtM" firstAttribute="centerX" secondItem="Oca-MK-6eQ" secondAttribute="centerX" id="1cx-BG-sMb"/>
+                                    <constraint firstItem="4RB-yP-ZtM" firstAttribute="leading" secondItem="Oca-MK-6eQ" secondAttribute="leading" constant="20" id="3aH-HW-0qq"/>
+                                    <constraint firstAttribute="bottom" secondItem="4RB-yP-ZtM" secondAttribute="bottom" constant="90" id="72V-o5-tco"/>
+                                    <constraint firstItem="4RB-yP-ZtM" firstAttribute="top" secondItem="jP7-AH-Ncm" secondAttribute="bottom" constant="8" symbolic="YES" id="86D-v8-UPR"/>
+                                    <constraint firstAttribute="trailing" secondItem="jP7-AH-Ncm" secondAttribute="trailing" constant="344" id="Ukx-Ju-aIb"/>
+                                    <constraint firstItem="4RB-yP-ZtM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jP7-AH-Ncm" secondAttribute="leading" id="yK6-Qf-3CI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="centerX" secondItem="CP2-QJ-hX0" secondAttribute="centerX" id="DEt-xc-qdi"/>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="leading" secondItem="CP2-QJ-hX0" secondAttribute="leading" id="TDT-p2-ihv"/>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="centerY" secondItem="CP2-QJ-hX0" secondAttribute="centerY" id="ToH-57-HTc"/>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="centerY" secondItem="Uyj-ox-Nbe" secondAttribute="centerY" id="Xu9-i1-YrU"/>
                             <constraint firstItem="Xky-wl-YCY" firstAttribute="centerY" secondItem="CP2-QJ-hX0" secondAttribute="centerY" id="Yyv-vF-daZ"/>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="leading" secondItem="Uyj-ox-Nbe" secondAttribute="leading" id="ei6-Yc-50v"/>
                             <constraint firstItem="Xky-wl-YCY" firstAttribute="centerX" secondItem="CP2-QJ-hX0" secondAttribute="centerX" id="fLY-Gx-ddb"/>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="trailing" secondItem="Uyj-ox-Nbe" secondAttribute="trailing" id="tKN-CL-ehM"/>
+                            <constraint firstItem="Oca-MK-6eQ" firstAttribute="top" secondItem="a5w-EQ-uoX" secondAttribute="top" constant="46" id="u9z-Bn-QPE"/>
+                            <constraint firstItem="Uyj-ox-Nbe" firstAttribute="top" secondItem="a5w-EQ-uoX" secondAttribute="top" constant="164" id="x5a-Bw-toL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a5w-EQ-uoX"/>
                     </view>
@@ -46,6 +87,7 @@
                     <connections>
                         <outlet property="loading" destination="Uyj-ox-Nbe" id="425-hP-JEk"/>
                         <outlet property="tipsLabel" destination="Xky-wl-YCY" id="PU3-ep-5Fd"/>
+                        <outlet property="tipsView" destination="Oca-MK-6eQ" id="rQg-Kw-Ref"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJi-gb-S6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>

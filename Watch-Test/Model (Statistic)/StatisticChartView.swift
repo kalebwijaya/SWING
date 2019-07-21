@@ -95,11 +95,11 @@ class StatisticChartView : MacawView {
     }
 
     private static func bowlingData() -> [BowlingStatistic] {
-        let gameOne     = BowlingStatistic(showNumbers: "12\nJAN", viewCount: 200)
-        let gameTwo     = BowlingStatistic(showNumbers: "22\nFEB", viewCount: 100)
-        let gameThree   = BowlingStatistic(showNumbers: "13\nMAR", viewCount: 150)
-        let gameFour    = BowlingStatistic(showNumbers: "4\nAPR", viewCount: 90)
-        let gameFive    = BowlingStatistic(showNumbers: "5\nMEI", viewCount: 50)
+        let gameOne     = BowlingStatistic(showNumbers: "12\nJAN", viewCount: 70)
+        let gameTwo     = BowlingStatistic(showNumbers: "22\nFEB", viewCount: 120)
+        let gameThree   = BowlingStatistic(showNumbers: "13\nMAR", viewCount: 90)
+        let gameFour    = BowlingStatistic(showNumbers: "4\nAPR", viewCount: 150)
+        let gameFive    = BowlingStatistic(showNumbers: "5\nMEI", viewCount: 170)
         
         return [gameOne , gameTwo , gameThree , gameFour , gameFive]
     }

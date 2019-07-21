@@ -18,14 +18,17 @@ class PlayController: UIViewController, WCSessionDelegate {
     
     @IBOutlet weak var tipsLabel: UILabel!
     
+    @IBOutlet weak var tipsView: UIView!
+    
+    
 
     override func viewDidLoad() {
-        super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.1058823529, green: 0.1058823529, blue: 0.1960784314, alpha: 1)
         wcSession = WCSession.default
         wcSession.delegate = self
         wcSession.activate()
         loading.loadGif(name: "loading")
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
@@ -46,6 +49,7 @@ class PlayController: UIViewController, WCSessionDelegate {
             if(message["flag"]as?String == "0"){
                 self.tipsLabel.isHidden = true
                 self.loading.isHidden = false
+                self.tipsView.isHidden = true
             }else{
                 self.loading.isHidden = true
                 self.tipsLabel.isHidden = false

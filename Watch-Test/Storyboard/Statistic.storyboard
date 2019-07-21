@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHP-MZ-cbA" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHP-MZ-cbA" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                 <rect key="frame" x="88" y="514" width="275" height="33"/>
                                 <color key="backgroundColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -60,7 +60,7 @@
                                         <color key="textColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9m-FY-bC5" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9m-FY-bC5" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                         <rect key="frame" x="20" y="172" width="334" height="26"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <state key="normal" title="View Details">
@@ -110,13 +110,13 @@
                                     <constraint firstItem="uGN-fO-c6i" firstAttribute="leading" secondItem="3OS-AU-UCy" secondAttribute="leading" constant="30" id="wBY-wb-Vdr"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRI-0X-Z3v" userLabel="Chart View" customClass="StatisticChartView" customModule="MC2_Statistic" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRI-0X-Z3v" userLabel="Chart View" customClass="StatisticChartView" customModule="Watch_Test" customModuleProvider="target">
                                 <rect key="frame" x="20" y="140" width="374" height="374"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gPm-YM-Fop">
                                         <rect key="frame" x="68" y="336" width="275" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Sru-Kq-yqW" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Sru-Kq-yqW" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -133,7 +133,7 @@ JAN</string>
                                                     <action selector="buttonDay1:" destination="9aL-Un-dsY" eventType="touchUpInside" id="Hft-bO-hDc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dlk-ra-L50" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dlk-ra-L50" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="0.0" width="35" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -150,7 +150,7 @@ FEB</string>
                                                     <action selector="buttonDay2:" destination="9aL-Un-dsY" eventType="touchUpInside" id="VB3-Ck-EhR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5QS-Cf-eMP" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5QS-Cf-eMP" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                                 <rect key="frame" x="120" y="0.0" width="35" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -167,7 +167,7 @@ MAR</string>
                                                     <action selector="buttonDay3:" destination="9aL-Un-dsY" eventType="touchUpInside" id="c6a-jl-s7a"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tyq-PR-A7G" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tyq-PR-A7G" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="35" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -184,7 +184,7 @@ JUN</string>
                                                     <action selector="buttonDay4:" destination="9aL-Un-dsY" eventType="touchUpInside" id="pNK-5p-9fN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-8x-gLY" customClass="StatisticButton" customModule="MC2_Statistic" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-8x-gLY" customClass="StatisticButton" customModule="Watch_Test" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="35" height="30"/>
                                                 <color key="backgroundColor" red="1" green="0.1493368611" blue="0.42566462449999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -279,7 +279,7 @@ JUL</string>
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                             <cells>
-                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PopupCard" id="PCk-7L-rMg" customClass="PopupCollectionViewCell" customModule="MC2_Statistic" customModuleProvider="target">
+                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PopupCard" id="PCk-7L-rMg" customClass="PopupCollectionViewCell" customModule="Watch_Test" customModuleProvider="target">
                                     <rect key="frame" x="7" y="0.0" width="340" height="120"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
