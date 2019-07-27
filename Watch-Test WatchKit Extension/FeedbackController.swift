@@ -16,13 +16,15 @@ class FeedbackController:WKInterfaceController, WCSessionDelegate{
     
     var wcSession:WCSession!
     var condition = "STR"
-    let tips = "Tilt Your Hand a Little To The Right"
+    let tips:[String] = ["Tilt Your Hand a Little To The Right", "Tilt Your Hand Slightly To The Right", "Good Handling, Keep It Up!"]
+    var number = 0
     
     override func awake(withContext context: Any?) {
         wcSession = WCSession.default
         wcSession.delegate = self
         wcSession.activate()
-        let message = ["tips":tips, "flag":"1"]
+        number = Int.random(in: 0 ..< tips.count)
+        let message = ["tips":tips[number], "flag":"1"]
         wcSession.sendMessage(message, replyHandler: nil, errorHandler: {
             Error in print(Error.localizedDescription)
         })

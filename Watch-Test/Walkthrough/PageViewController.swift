@@ -15,8 +15,8 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource {
         let pageOne = sb.instantiateViewController(withIdentifier: "PageOne")
         let pageTwo = sb.instantiateViewController(withIdentifier: "PageTwo")
         let pageThree = sb.instantiateViewController(withIdentifier: "PageThree")
-        
-        return [pageOne, pageTwo, pageThree]
+        let pageFour = sb.instantiateViewController(withIdentifier: "PageFour")
+        return [pageOne, pageTwo, pageThree, pageFour]
     }()
     
     override func viewDidLoad() {

@@ -26,17 +26,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="wR6-0v-JqY">
-                                <rect key="frame" x="187.5" y="779.5" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="wR6-0v-JqY">
+                                <rect key="frame" x="179.5" y="779.5" width="55" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.74840408563613892" green="0.22088932991027832" blue="0.68630689382553101" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="currentPageIndicatorTintColor" red="0.74882610100000002" green="0.22117691496170544" blue="0.6849248619041246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleWatch" translatesAutoresizingMaskIntoConstraints="NO" id="9b5-Gx-ida">
+                                <rect key="frame" x="87" y="208" width="240" height="240"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="36X-6D-UKv"/>
+                                    <constraint firstAttribute="width" constant="240" id="bHJ-bN-eIB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1070477888" green="0.1078607216" blue="0.18824437259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="9b5-Gx-ida" firstAttribute="centerX" secondItem="yHq-8Y-sDe" secondAttribute="centerX" id="0rf-te-FvK"/>
                             <constraint firstItem="wR6-0v-JqY" firstAttribute="centerY" secondItem="yHq-8Y-sDe" secondAttribute="centerY" constant="350" id="0uX-Q4-lit"/>
                             <constraint firstItem="wR6-0v-JqY" firstAttribute="centerX" secondItem="yHq-8Y-sDe" secondAttribute="centerX" id="LoP-vE-eWU"/>
+                            <constraint firstItem="9b5-Gx-ida" firstAttribute="centerY" secondItem="yHq-8Y-sDe" secondAttribute="centerY" constant="-120" id="rsu-ga-RnB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wDp-WU-VQa"/>
                     </view>
@@ -53,16 +63,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="kjT-vq-as9">
-                                <rect key="frame" x="187.5" y="779.5" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="kjT-vq-as9">
+                                <rect key="frame" x="179.5" y="779.5" width="55" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.74840408560000005" green="0.22088932989999999" blue="0.68630689379999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="currentPageIndicatorTintColor" red="0.74840408563613892" green="0.22088932991027832" blue="0.68630689382553101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballImage" translatesAutoresizingMaskIntoConstraints="NO" id="s9E-Bn-DJK">
+                                <rect key="frame" x="87" y="208" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="2td-EV-iP3"/>
+                                    <constraint firstAttribute="width" constant="240" id="pQu-w2-GVh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1070477888" green="0.1078607216" blue="0.18824437259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="kjT-vq-as9" firstAttribute="centerX" secondItem="Rkl-Pw-0vH" secondAttribute="centerX" id="KDV-en-bAa"/>
                             <constraint firstItem="kjT-vq-as9" firstAttribute="centerY" secondItem="Rkl-Pw-0vH" secondAttribute="centerY" constant="350" id="Shq-OP-iAI"/>
+                            <constraint firstItem="s9E-Bn-DJK" firstAttribute="centerX" secondItem="Rkl-Pw-0vH" secondAttribute="centerX" id="seX-39-IG4"/>
+                            <constraint firstItem="s9E-Bn-DJK" firstAttribute="centerY" secondItem="Rkl-Pw-0vH" secondAttribute="centerY" constant="-120" id="sqk-QC-gIa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="40g-wh-ief"/>
                     </view>
@@ -72,20 +91,55 @@
             <point key="canvasLocation" x="559" y="-765"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="Ikv-8s-1kr">
+            <objects>
+                <viewController storyboardIdentifier="PageThree" id="lAM-hE-4lR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bS1-QA-W2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-qi-10G">
+                                <rect key="frame" x="179.5" y="779.5" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.74840408560000005" green="0.22088932989999999" blue="0.68630689379999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" red="0.74882610100000002" green="0.221176915" blue="0.68492486190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="statistic" translatesAutoresizingMaskIntoConstraints="NO" id="vQ3-4O-Oph">
+                                <rect key="frame" x="87" y="208" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Gll-wK-zEP"/>
+                                    <constraint firstAttribute="width" constant="240" id="jCf-Pp-ZUf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1070477888" green="0.1078607216" blue="0.18824437259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vQ3-4O-Oph" firstAttribute="centerY" secondItem="bS1-QA-W2Y" secondAttribute="centerY" constant="-120" id="62K-tm-FsV"/>
+                            <constraint firstItem="sYA-qi-10G" firstAttribute="centerY" secondItem="bS1-QA-W2Y" secondAttribute="centerY" constant="350" id="FhS-2Y-R40"/>
+                            <constraint firstItem="sYA-qi-10G" firstAttribute="centerX" secondItem="bS1-QA-W2Y" secondAttribute="centerX" id="e6B-hv-S4g"/>
+                            <constraint firstItem="vQ3-4O-Oph" firstAttribute="centerX" secondItem="bS1-QA-W2Y" secondAttribute="centerX" id="xAk-aa-Qd2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H7D-4X-Ce3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHj-yn-pYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="-766"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="uJ7-ji-mMM">
             <objects>
-                <viewController storyboardIdentifier="PageThree" id="aJ6-2u-aSc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageFour" id="aJ6-2u-aSc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qr-PD-F1r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="AAa-gz-TWU">
-                                <rect key="frame" x="187.5" y="780" width="39" height="36"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="3" translatesAutoresizingMaskIntoConstraints="NO" id="AAa-gz-TWU">
+                                <rect key="frame" x="179.5" y="780" width="55" height="36"/>
                                 <color key="pageIndicatorTintColor" red="0.74840408560000005" green="0.22088932989999999" blue="0.68630689379999998" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="currentPageIndicatorTintColor" red="0.74840408563613892" green="0.22088932991027832" blue="0.68630689382553101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EJ-0R-dP5">
-                                <rect key="frame" x="93" y="674" width="229" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EJ-0R-dP5">
+                                <rect key="frame" x="93" y="674" width="228" height="53"/>
                                 <color key="backgroundColor" red="0.2285346389" green="0.2255275249" blue="0.31373617050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="G3S-td-Kw1"/>
@@ -103,12 +157,21 @@
                                     <segue destination="WM9-QB-oF6" kind="show" id="1Nc-Qf-9X9"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4yE-hj-ke1">
+                                <rect key="frame" x="87" y="208" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="PBK-zN-RVg"/>
+                                    <constraint firstAttribute="height" constant="240" id="jb0-wy-aZB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10704778879880905" green="0.10786072164773941" blue="0.18824437260627747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="AAa-gz-TWU" firstAttribute="centerY" secondItem="8qr-PD-F1r" secondAttribute="centerY" constant="350" id="ARV-wn-afR"/>
                             <constraint firstItem="2EJ-0R-dP5" firstAttribute="centerX" secondItem="AAa-gz-TWU" secondAttribute="centerX" id="AYw-oa-2XV"/>
+                            <constraint firstItem="4yE-hj-ke1" firstAttribute="centerY" secondItem="8qr-PD-F1r" secondAttribute="centerY" constant="-120" id="H9r-IV-yiB"/>
                             <constraint firstItem="AAa-gz-TWU" firstAttribute="top" secondItem="2EJ-0R-dP5" secondAttribute="bottom" constant="53" id="KgB-DY-8BD"/>
+                            <constraint firstItem="4yE-hj-ke1" firstAttribute="centerX" secondItem="8qr-PD-F1r" secondAttribute="centerX" id="Maf-Yj-hwG"/>
                             <constraint firstItem="2EJ-0R-dP5" firstAttribute="leading" secondItem="yF2-sF-upY" secondAttribute="leading" constant="93" id="V9K-kB-XQ2"/>
                             <constraint firstItem="2EJ-0R-dP5" firstAttribute="top" secondItem="yF2-sF-upY" secondAttribute="top" constant="630" id="af0-xM-a3Z"/>
                             <constraint firstItem="AAa-gz-TWU" firstAttribute="centerX" secondItem="8qr-PD-F1r" secondAttribute="centerX" id="gZu-st-nVY"/>
@@ -118,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4J5-ih-4Ym" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313.0434782608697" y="-765.40178571428567"/>
+            <point key="canvasLocation" x="2109" y="-765"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5Fb-sE-bRU">
@@ -180,4 +243,9 @@
             <point key="canvasLocation" x="282" y="344"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appleWatch" width="256" height="256"/>
+        <image name="ballImage" width="206" height="206"/>
+        <image name="statistic" width="21.5" height="18"/>
+    </resources>
 </document>
